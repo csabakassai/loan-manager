@@ -1,0 +1,30 @@
+<wicket:panel>
+	<div class="box">
+		<div class="boxheader">
+			<label>Loan</label>
+			<div style="float: right;">
+				<div wicket:id="linkList" style="display: inline;">
+					<a wicket:id="doLink" style="margin-left: 10px;">
+						<span wicket:id="linkName" />
+					</a>	
+				</div>
+			</div>
+		</div>
+		<div class="boxcontent">
+			<table>
+				<tr>
+					<td class="first">Full name</td>
+					<td><span wicket:id="fullName" /></td>
+				</tr>
+				<tr>
+					<td class="first">Amount</td>
+					<td><span wicket:id="loanAmount" /></td>
+				</tr>
+				<tr>
+					<td class="first">End date</td>
+					<td><span wicket:id="endDate" /></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</wicket:panel>

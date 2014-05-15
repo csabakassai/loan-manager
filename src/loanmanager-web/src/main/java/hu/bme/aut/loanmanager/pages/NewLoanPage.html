@@ -1,0 +1,57 @@
+<wicket:extend>
+	
+	<script>
+
+		var counter = 0;
+
+		function increaseCounter() {
+			counter++;
+		}
+		
+		function sumAverage() {
+			var loanAmount = parseInt($("#loanAmount").val());
+			var ending = parseInt(loanAmount / counter);
+			$(".valueInput").each(function() {
+				$(this).val(ending);
+			});
+		}
+	</script>
+	
+	<div wicket:id="newLoanContainer">
+		<form wicket:id="loanForm">
+		
+			<table>
+				<tr>
+					<td>Loan amount:</td>
+					<td><input type="text" wicket:id="loanAmount" id="loanAmount"/></td>
+				</tr>
+				<tr>
+					<td>Loan date:</td>
+					<td><input type="text" wicket:id="endDate" /></td>
+				</tr>
+			</table>
+			
+			<a wicket:id="newUser" onclick="increaseCounter();"><button>New loaner</button></a>
+			<a onclick="sumAverage();" href="#"><button>equal loan amount</button></a>
+			<div wicket:id="listContainer">
+				<table id="userTable">
+					<tr>
+						<td>Username</td>
+						<td>Amount</td>
+					</tr>
+					<tr wicket:id="peopleList" id="row">
+						<td>
+							<select wicket:id="selectableUsers"/>	
+						</td>
+						<td>
+							<input type="text" wicket:id="amount" class="valueInput"/>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<input type="submit" wicket:id="submit" value="Add New Loan"/>
+		</form>
+	
+	</div>
+	
+</wicket:extend>

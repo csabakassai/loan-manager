@@ -1,0 +1,56 @@
+<wicket:extend>
+
+	<style type="text/css">
+		.ui-draggable { float: left; z-index: 99; }
+		.ui-droppable { width: 280px; x-position: relative; }
+	</style>
+	<div wicket:id="newPartnerContainer">
+	
+		<div style="float: left;">
+			<div>
+				<table>
+					<form wicket:id="searchForm">
+						<tr><td>Full name</td><td><input type="text" wicket:id="fullName" /></td></tr>
+						<tr><td>Username</td><td><input type="text" wicket:id="username" /></td></tr>
+						<tr><td>Email</td><td><input type="text" wicket:id="email" /></td></tr>
+						<tr><td colspan="2"><input type="submit" wicket:id="search" value="Search" style="float: right;"/></td></tr>
+					</form>
+				</table>
+			</div>
+		</div>
+		
+		<div style="float: right; top: 10px;">
+			<label style="padding-left: 100px;">Selectable users</label>
+			<div style="float: right; padding-right: 100px;">
+				<span>Navigator: </span>
+				<span wicket:id="navigator" />
+			</div>
+			<div wicket:id="personList" style="width: 930px;">
+				<div wicket:id="personPanel"></div>
+			</div>
+		</div>
+		
+		<div style="display: inline-block;">
+			<label style="padding-left: 100px;">Partners</label>
+			<div style="float: right; padding-right: 100px;">
+				<span>Navigator: </span>
+				<span wicket:id="mineNavigator" />
+			</div>
+			<div wicket:id="minePersonList" style="width: 1240px;">
+				<div wicket:id="personPanel"></div>
+			</div>
+		</div>
+		
+		<div style="display: inline-block;">
+			<label style="padding-left: 100px;">Undecided Partners</label>
+			<div style="float: right; padding-right: 100px;">
+				<span>Navigator: </span>
+				<span wicket:id="undecidedNavigator" />
+			</div>
+			<div wicket:id="undecidedPartners" style="width: 1240px;">
+				<div wicket:id="personPanel"></div>
+			</div>
+		</div>
+	
+	</div>
+</wicket:extend>

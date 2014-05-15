@@ -1,0 +1,30 @@
+<wicket:panel>
+	<div class="box">
+		<div class="boxheader">
+			<label wicket:id="fullNameHeader" />
+			<div style="float: right;">
+				<div wicket:id="linkList" style="display: inline;">
+					<a wicket:id="doLink" style="margin-left: 10px;">
+						<span wicket:id="linkName" />
+					</a>	
+				</div>
+			</div>
+		</div>
+		<div class="boxcontent">
+			<table>
+				<tr>
+					<td class="first">Full name</td>
+					<td><span wicket:id="fullName" /></td>
+				</tr>
+				<tr>
+					<td class="first">Username</td>
+					<td><span wicket:id="username" /></td>
+				</tr>
+				<tr>
+					<td class="first">Email</td>
+					<td><span wicket:id="email" /></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</wicket:panel>

@@ -1,0 +1,118 @@
+body {
+	background-color: #FEFFEF;
+}
+
+fieldset {
+	width: auto;
+	display: inline-block;
+	border: 1px solid #FFE4C4;
+	border-radius: 5px;
+}
+
+table {
+	margin-top: 10px;
+	text-align: left;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+
+label {
+	font-size: 20px;
+}
+
+.content {
+	padding-top:20px;
+	position: relative;
+	padding-right: auto;
+	padding-left: auto;
+}
+
+.errorPanel {
+	position:fixed;
+	width: 300px;
+	color: red;
+	left: 50%;
+	margin-left: -150px;
+}
+
+.centerLogin {
+	position:fixed;
+    top: 50%;
+    left: 50%;
+    width:260px;
+    height:140px;
+    margin-top: -9em; 
+    margin-left: -130px;
+}
+
+.centerRegistration {
+	position:fixed;
+    top: 50%;
+    left: 50%;
+    width:520px;
+    height:140px;
+    margin-top: -9em; 
+    margin-left: -150px;
+}
+
+.headerPanel {
+	height: 30px;
+	width: 100%;
+	border-bottom: 1px solid #F1EDC2;
+}
+
+.loggedInUserDiv {
+	float: right;
+	margin-right: 15px;
+}
+
+.menuPanel {
+	height: 50px;
+	width: 100%;
+	border-bottom: 1px solid #F1EDC2;
+	background-color: #CECBA0;
+}
+
+.menuItem {
+	width: 13%;
+	height: 30px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+}
+
+.menuItem a {
+	color: black;
+	text-shadow: aqua;
+	top: 5px;
+	position: relative;
+}
+
+.box {
+	width: 300px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	margin-left: 5px;
+	margin-rigth: 5px;
+	margin-bottom: 5px;
+	display: block;
+	float: left;
+}
+
+.first {
+	width: 100px;
+}
+
+.boxheader {
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid grey;
+	padding-left: 10px !important;
+	padding: 3px;
+	background: #F1EDC2;	
+}
+
+.boxcontent {
+	padding-left: 10px !important;
+	padding: 3px;
+	background: #F1EDC2;	
+}
